@@ -5748,7 +5748,7 @@ function startApp() {
         
         // Create an image element for the icon
         var typeIcon = document.createElement("img");
-        typeIcon.setAttribute("src", ".assets/icons/sphere.png");
+        typeIcon.setAttribute("src", "./assets/icons/sphere.png");
         typeIcon.setAttribute("alt", "Toggle toolhead Type");
         typeIcon.style.width = '50px';
         typeIcon.style.height = '50px';
