@@ -131,7 +131,7 @@ document.body.appendChild(bgm);
 
 // --- Start Button ---
 //startButton = [];
-const startSound = new Audio ('/sounds/startButton.wav');
+const startSound = new Audio ('../sounds/startButton.wav');
 //const startSound = new Audio ('sounds/drankdrugs.mp3');
 //const startSound = new Audio ('sounds/start_jk.mp3');
 
