@@ -124,7 +124,7 @@ const bgm = document.createElement("audio");
 bgm.setAttribute("id", "bgm");
 bgm.setAttribute("loop", "");
 //bgm.innerHTML = '<source src = "sounds/wii.mp3", type = "audio/mpeg">';
-bgm.innerHTML = '<source src = "./sounds/vaporwave.mp3", type = "audio/mpeg">';
+bgm.innerHTML = '<source src = "./assets/sounds/vaporwave.mp3", type = "audio/mpeg">';
 document.body.appendChild(bgm);
 
 
@@ -139,29 +139,29 @@ const startSound = new Audio ('./assets/sounds/startButton.wav');
 // --- Create Mesh ---   @ booleanUnion 3
 //const createSound = new Audio ('sounds/plop.mp3');
 //const createSound = new Audio ('sounds/bam_kai.mp3');
-const createSound = new Audio ('./sounds/pop.mp3');
+const createSound = new Audio ('./assets/sounds/pop.mp3');
 
 
-const erase_Sound = new Audio ('./sounds/brr.mp3');
+const erase_Sound = new Audio ('./assets/sounds/brr.mp3');
 
 
 // --- Export Button ---
-const exportSound = new Audio ('./sounds/staple.wav');
+const exportSound = new Audio ('./assets/sounds/staple.wav');
 //const exportSound = new Audio ('sounds/export_jona.mp3');
 
 
 // --- Clear Button ---
-const clearSound = new Audio('./sounds/clearButton.wav');
+const clearSound = new Audio('./assets/sounds/clearButton.wav');
 
 
 // --- Toolhead Type Button ---
 //const toolheadTypeSound = new Audio('sounds/plop_switch.mp3');
-const toolheadTypeSound = new Audio('./sounds/selectButton.wav');
+const toolheadTypeSound = new Audio('./assets/sounds/selectButton.wav');
 
 
 
 // --- Toolhead Type Button ---
-const toolheadSizeSound = new Audio('./sounds/size_switch.mp3');
+const toolheadSizeSound = new Audio('./assets/sounds/size_switch.mp3');
 
 
 
@@ -5627,7 +5627,7 @@ function startApp() {
         
         // Create an image element for the icon
         var muteIcon = document.createElement("img");
-        muteIcon.setAttribute("src", "./icons/mute_red.png");
+        muteIcon.setAttribute("src", "./assets/icons/mute_red.png");
         muteIcon.setAttribute("alt", "Toggle bgm");
         muteIcon.style.width = '23px';
         muteIcon.style.height = '23px';
@@ -5711,13 +5711,13 @@ function startApp() {
 
                 bgm.pause();
                 //muteButton.textContent = "Mute";
-                muteIcon.setAttribute("src", "./icons/mute_red.png");
+                muteIcon.setAttribute("src", "./assets/icons/mute_red.png");
 
             } else {
 
                 bgm.play();
                 //muteButton.textContent = "Unmute";
-                muteIcon.setAttribute("src", "./icons/unmute_green.png");
+                muteIcon.setAttribute("src", "./assets/icons/unmute_green.png");
 
             }
 
@@ -5748,7 +5748,7 @@ function startApp() {
         
         // Create an image element for the icon
         var typeIcon = document.createElement("img");
-        typeIcon.setAttribute("src", "./icons/sphere.png");
+        typeIcon.setAttribute("src", ".assets/icons/sphere.png");
         typeIcon.setAttribute("alt", "Toggle toolhead Type");
         typeIcon.style.width = '50px';
         typeIcon.style.height = '50px';
@@ -5832,7 +5832,7 @@ function startApp() {
 
                 button_toohead_type = 2;
                 //muteButton.textContent = "Mute";
-                typeIcon.setAttribute("src", "./icons/sphere.png");
+                typeIcon.setAttribute("src", "./assets/icons/sphere.png");
 
                 toolheadTypeSound.play();
 
@@ -5842,7 +5842,7 @@ function startApp() {
 
                 button_toohead_type = 1;
                 //muteButton.textContent = "Unmute";
-                typeIcon.setAttribute("src", "./icons/cube.png");
+                typeIcon.setAttribute("src", "./assets/icons/cube.png");
 
                 toolheadTypeSound.play();
 
@@ -5877,7 +5877,7 @@ function startApp() {
         
         // Create an image element for the icon
         var sizeIcon1 = document.createElement("img");
-        sizeIcon1.setAttribute("src", "./icons/1s_f.png");
+        sizeIcon1.setAttribute("src", "./assets/icons/1s_f.png");
         sizeIcon1.setAttribute("alt", "Toggle toolhead Size");
         sizeIcon1.style.width = '30px';
         sizeIcon1.style.height = '30px';
@@ -5935,7 +5935,7 @@ function startApp() {
         
         // Create an image element for the icon
         var sizeIcon2 = document.createElement("img");
-        sizeIcon2.setAttribute("src", "./icons/2s_h.png");
+        sizeIcon2.setAttribute("src", "./assets/icons/2s_h.png");
         sizeIcon2.setAttribute("alt", "Toggle toolhead Size");
         sizeIcon2.style.width = '30px';
         sizeIcon2.style.height = '30px';
@@ -5993,7 +5993,7 @@ function startApp() {
         
         // Create an image element for the icon
         var sizeIcon3 = document.createElement("img");
-        sizeIcon3.setAttribute("src", "./icons/3s_h.png");
+        sizeIcon3.setAttribute("src", "./assets/icons/3s_h.png");
         sizeIcon3.setAttribute("alt", "Toggle toolhead Size");
         sizeIcon3.style.width = '30px';
         sizeIcon3.style.height = '30px';
@@ -6053,9 +6053,9 @@ function startApp() {
 
             button_toolhead_size = 1;
 
-            sizeIcon1.setAttribute("src", "./icons/1s_f.png");
-            sizeIcon2.setAttribute("src", "./icons/2s_h.png");
-            sizeIcon3.setAttribute("src", "./icons/3s_h.png");
+            sizeIcon1.setAttribute("src", "./assets/icons/1s_f.png");
+            sizeIcon2.setAttribute("src", "./assets/icons/2s_h.png");
+            sizeIcon3.setAttribute("src", "./assets/icons/3s_h.png");
 
             toolheadSizeSound.play();
 
@@ -6074,9 +6074,9 @@ function startApp() {
 
             button_toolhead_size = 2;
 
-            sizeIcon1.setAttribute("src", "./icons/1s_h.png");
-            sizeIcon2.setAttribute("src", "./icons/2s_f.png");
-            sizeIcon3.setAttribute("src", "./icons/3s_h.png");
+            sizeIcon1.setAttribute("src", "./assets/icons/1s_h.png");
+            sizeIcon2.setAttribute("src", "./assets/icons/2s_f.png");
+            sizeIcon3.setAttribute("src", "./assets/icons/3s_h.png");
 
             toolheadSizeSound.play();
 
@@ -6095,9 +6095,9 @@ function startApp() {
 
             button_toolhead_size = 3;
 
-            sizeIcon1.setAttribute("src", "./icons/1s_h.png");
-            sizeIcon2.setAttribute("src", "./icons/2s_h.png");
-            sizeIcon3.setAttribute("src", "./icons/3s_f.png");
+            sizeIcon1.setAttribute("src", "./assets/icons/1s_h.png");
+            sizeIcon2.setAttribute("src", "./assets/icons/2s_h.png");
+            sizeIcon3.setAttribute("src", "./assets/icons/3s_f.png");
 
             toolheadSizeSound.play();
 
